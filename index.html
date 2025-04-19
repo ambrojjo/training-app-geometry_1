@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Training App Geometry #1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Schermata di login -->
+  <div id="login-container">
+    <h2>Inserisci il tuo nickname</h2>
+    <input type="text" id="nickname" placeholder="Nickname">
+    <button onclick="startTraining()">Inizia</button>
+  </div>
+
+  <!-- Area di training/primo problema -->
+  <div id="training-container" style="display:none;">
+    <h2 id="problem-text"></h2>
+    <div id="answers"></div>
+    <button id="check-button">Verifica</button>
+    <p id="feedback"></p>
+  </div>
+
+  <!-- Sezione per il riassunto dei problemi svolti (comparirà dopo almeno 2 problemi) -->
+  <div id="summary"></div>
+
+  <!-- Sezione laterale per le statistiche globali -->
+  <div id="stats">
+    <h3>Statistiche Generali</h3>
+    <p id="stats-text"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
