@@ -67,11 +67,11 @@ button:hover {
   font-weight: bold;
 }
 
-/* Box statistiche */
+/* Box statistiche: Migliore posizionamento */
 #stats {
   position: fixed;
   right: 20px;
-  bottom: 40px;
+  bottom: 10%; /* Abbassato per evitare sovrapposizioni */
   border: 1px solid #ccc;
   padding: 15px;
   background: white;
@@ -80,15 +80,14 @@ button:hover {
   border-radius: 8px;
 }
 
-/* Layout responsivo per schermi più piccoli */
+/* Adattamento per dispositivi mobili */
 @media screen and (max-width: 768px) {
-  #problem-text, .question-container {
-      width: 90%;
-  }
-
   #stats {
       width: 90%;
       position: relative;
       margin: 20px auto;
+      text-align: center;
+      bottom: auto; /* Ora non sarà vicino ai pulsanti */
   }
 }
+
